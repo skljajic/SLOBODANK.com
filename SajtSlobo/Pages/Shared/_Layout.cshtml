@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SajtSlobo</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">SajtSlobo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Biography">Biography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Portfolio">Portfolio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Links">Technologies & links</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container"> 
+                    <a href="https://www.facebook.com/slobodan.kljajic.81" target="_blank">
+                        <img src="~/lib/imgs/fblogo.png" style="width: 25px;height: 25px"/>
+                    </a> 
+                    <a  href="https://www.linkedin.com/in/slobodan-kljajic-0a7b40176/" target="_blank">
+                        <img src="~/lib/imgs/linkedinlogo.png" style="width: 25px;height: 25px"/>
+                    </a>
+                 
+                    <a href="mailto:slobodan-kljajic@blic.net" target="_blank">
+                        <img src="~/lib/imgs/email.png"  style="width: 25px;height: 25px"/>
+                    </a>
+                
+                    <a   href="https://github.com/skljajic" target="_blank">
+                        <img src="~/lib/imgs/githubLogo.png" style="width: 25px;height: 25px" />
+                    </a> 
+                    <a  href="https://www.upwork.com/freelancers/~01c359c3ae7967a87d" target="_blank">
+                        <img src="~/lib/imgs/upworklogo.png" style="width: 25px;height: 25px" />
+                    </a> ASP.NET CORE 3.1 - Microsoft Visual Studio 2019 - C# 
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
